@@ -28,7 +28,7 @@ export default function GuidePage() {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
   return <div className="guide-page">
-    <header className="guide-top"><a className="guide-brand" href={import.meta.env.BASE_URL}><span><Heart size={18} /></span>마음장부</a><a className="guide-back" href={import.meta.env.BASE_URL}><ArrowLeft size={16} /> 장부로 돌아가기</a></header>
+    <header className="guide-top"><a className="guide-brand" href={`${import.meta.env.BASE_URL}#/`}><span><Heart size={18} /></span>마음장부</a><a className="guide-back" href={`${import.meta.env.BASE_URL}#/`}><ArrowLeft size={16} /> 장부로 돌아가기</a></header>
     <main className="guide-main">
       <section className="guide-hero">
         <span className="guide-kicker">ON-SITE QUICK GUIDE</span>
@@ -59,7 +59,7 @@ export default function GuidePage() {
         <div><span className="guide-kicker">BEFORE YOU FINISH</span><h2>마지막으로 확인해 주세요</h2></div>
         <ul><li><Check size={17} />봉투 번호와 장부 접수 번호가 일치합니다.</li><li><Check size={17} />현금 봉투 수와 식권만 지급한 건수를 확인했습니다.</li><li><Check size={17} />실계수와 차이 사유를 저장했습니다.</li><li><Check size={17} />Excel 정산표와 장부 백업 파일을 보관했습니다.</li></ul>
       </section>
-      <footer className="guide-footer">마음장부 · 축의대 담당자 안내 <a href={import.meta.env.BASE_URL}>장부로 돌아가기</a></footer>
+      <footer className="guide-footer">마음장부 · 축의대 담당자 안내 <a href={`${import.meta.env.BASE_URL}#/`}>장부로 돌아가기</a></footer>
     </main>
   </div>;
 }
