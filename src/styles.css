@@ -55,4 +55,4 @@
 .modal>a.secondary.full{display:flex;justify-content:center;text-decoration:none}
 .modal .history-row>div:first-child{flex:1;min-width:0;width:auto}
 .modal .history-row>div:nth-last-child(2){flex:none}
-.setup-guide{display:flex;justify-content:center;gap:8px;text-decoration:none}
+.setup-guide{display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none}
